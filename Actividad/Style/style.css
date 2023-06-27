@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img:hover {
+  box-shadow: 0 0 10px purple;
+}
+
+body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-HD-Gif-Wallpapers-For-Desktop.gif");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Calibri, sans-serif;
+}
+
+.mockup {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 800px;
+  background-color: #262739;
+  border-radius: 25px;
+  opacity: 0.9;
+  
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #c594aa;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.est {
+  color: #9b9b9b;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+strong {
+  font-size: 18px;
+  color: #c594aa;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+ul {
+  color: #c594aa;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px 0 0 75px;
+}
+
+li {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.il {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.pill {
+  opacity: 0.9;
+  display: inline-block;
+  margin: 0 0 8px 20px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #c594aa;
+  color: white;
+  width: 300px;
+  font-size: 14px;
+  position: relative;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #c594aa;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.social-link:hover {
+  background-color: #c74c0c;
+}
+
+.pill::after {
+  content: attr(data-message);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #cf9f8d;
+  color: black;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.pill:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.final-section {
+  background-color: #191923;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+}
+
+.final-section:hover {
+  font-weight: bold;
+  background-color: black;
+}
+
+/* Estilo para pantallas chicas */
+@media screen and (max-width: 600px) {
+  .mockup {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .est {
+    font-size: 14px;
+  }
+  
+  ul {
+    font-size: 16px;
+    padding-left: 50px;
+  }
+  
+  .pill {
+    width: 250px;
+    font-size: 12px;
+  }
+	
+	button {
+color: white;
+border-radius: 5px;
+border-color: transparent;
+padding: 5px 30px;
+margin-left: 30%;
+display: block;
+margin: 0 auto;
+margin-top: 10px;
+width: 384px;
+height: 67px;
+background-color: #e3627f;
+font-size: 18px;
+font-weight: bold;
+}
+
+button:hover {
+  color: #151E33;
+  
+}
+}
+
+/* Estilo para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .mockup {
+    max-width: 500px;
+  }
+}
+
+/* Estilo para pantallas grandes */
+@media screen and (min-width: 1025px) {
+  .mockup {
+    max-width: 800px;
+  }
+}
