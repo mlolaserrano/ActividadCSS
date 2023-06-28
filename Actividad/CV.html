@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Lola Serrano - Diseñadora Multimedial</title>
-
+<link rel="stylesheet" href="Style/style.css">
 </head>
+	<div class="mockup">
 <body>
-	<center>
+	
 <header>
 	 
 			<h1>Lola Serrano</h1> 
@@ -14,34 +15,42 @@
 		<nav>
 			<h3>Estudiante de Diseño Multimedial</h3>
 		</nav>
-	</center>
+	
 
 <main>
     <section>
         <article>
-           <center> <img src="Foto/Serrano Lola LinkIn.jpeg" alt="Lola Serrano"> 
-            <p>Mi nombre es Lola Serrano y tengo 22 años. Vivo en Buenos Aires, en el barrio de Belgrano. En el 2021, realicé cursos de Diseño UX/UI en Coder House y actualmente estoy realizando otro de Desarrollo web en la UTN.</p></center>
+            <img src="Foto/Serrano Lola LinkIn.jpeg" alt="Lola Serrano"> 
+            <p>Mi nombre es <strong>Lola Serrano</strong> y tengo 22 años. Vivo en Buenos Aires, en el barrio de Belgrano.</p> 
+			   <p>En el 2021, realicé cursos de Diseño UX/UI en Coder House y actualmente estoy realizando otro de Desarrollo web en la UTN.</p>
 
-            <h2>Cursos realizados:</h2>
-            <ul>
-                <li>Diseño UX/UI</li>
-                <li>Diseño UX/UI Avanzado</li>
-                <li>UX Research</li>
-                <li>UX Writing</li>
+           <ul>
+    <p>Cursos realizados:</p>
+    <li>Diseño Ux/Ui</li>
+    <li>Diseño Ux/Ui Avanzado</li>
+    <li>Ux Research</li>
+    <li>Ux Writting</li>
+  
                 <li>Programador Web Inicial - Front End Developer (en curso)</li>
             </ul>
 	
-            <hr>
+            <p>Mis habilidades:</p>
+  <div class="pill" data-message="Click para ver mis creaciones ♥"><a href="#">Fotografía</a></div>
+  <div class="pill" data-message="Click para ver mis creaciones ♥"><a href="#">Diseño de Interfaz</a></div>
+  <div class="pill" data-message="Click para ver mis creaciones ♥"><a href="#">Edición de foto y video</a></div>
+  <div class="pill" data-message="Click para ver mis creaciones ♥"><a href="#">Desarrollo Web: Nivel básico</a></div>
+  <br><br><br>
+  <hr><br><br>
 
-            <p>Actualmente estoy estudiando Diseño Multimedial en el <a href="https://isec.edu.ar/" target="_blank">Instituto Sudamericano para la Enseñanza de la Comunicación (ISEC)</a>. Y tengo planeado seguir mis estudios como Licenciada en Comunicación Digital e Interactiva en la <a href="https://uca.edu.ar/es/home" target="_blank">Universidad Católica de Buenos Aires (UCA)</a>.</p>
+           <p class="final-section">Actualmente estoy estudiando Diseño Multimedial en el <a href="https://isec.edu.ar/" target="_blank">Instituto Sudamericano para la Enseñanza de la Comunicación (ISEC)</a>. Y tengo planeado seguir mis estudios como Licenciada en Comunicación Digital e Interactiva en la <a href="https://uca.edu.ar/es/home" target="_blank">Universidad Católica de Buenos Aires (UCA)</a>.</p>
 
-            <p>¡Me considero apasionada por el diseño y la creación de experiencias digitales impactantes! Mi objetivo es combinar mis habilidades en diseño UX/UI con mi conocimiento en desarrollo web para ofrecer soluciones creativas y efectivas para los usuarios.</p>
+           <p class="final-section2"> ¡Me considero apasionada por el diseño y la creación de experiencias digitales impactantes! Mi objetivo es combinar mis habilidades en diseño UX/UI con mi conocimiento en desarrollo web para ofrecer soluciones creativas y efectivas para los usuarios.</p><br>
 
-            <p>No dude en ponerse en contacto conmigo para discutir oportunidades de colaboración o proyectos emocionantes. ¡Espero poder trabajar juntos!</p>
+           <p> No dude en ponerse en contacto conmigo para discutir oportunidades de colaboración o proyectos emocionantes. ¡Espero poder trabajar juntos!</p>
 
             <aside>
                 <p>Te invito a ver mi porfolio:</p>
-                <a href="#" target="_blank">Behance</a>
+                <a href="#" target="_blank" class="social-link2">Behance</a>
             </aside>
         </article>
     </section>
@@ -50,37 +59,48 @@
 <footer>
  
 
-    <p>Puedes encontrarme en:</p>
-    <ul>
-        <li><a href="#" target="_blank">Instagram</a></li>
-        <li><a href="#" target="_blank">LinkedIn</a></li>
-    </ul>
-    <p>O también te invito a ponerte en contacto completando el siguiente formulario y me pondré en contacto contigo:</p>
+     <div class="social-media">
+    Redes sociales:
+    <br><br>
+    <a href="#" target="_blank" class="social-link">Instagram</a>
+    <a href="#" target="_blank" class="social-link">LinkedIn</a>
+  </div> <br>
+
+    <p>O también te invito a ponerte en contacto completando el siguiente formulario y me pondré en contacto contigo:</p> <br>
+	
+	
     
-    <form>
-        <div>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name" required>
-        </div>
+    <form action="">
+		
+          <label for="nya" class="user">NOMBRE COMPLETO:</label>
+		
 
-        <br>
+     <div>
+			  
+			  <br>
+			  
+            <input id="nya" placeholder="Ingresa tu nombre completo" required>
+          </div>
 
-        <div>
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" required>
-        </div>
+		<br>
+		
+          <label for="mail" class="user">EMAIL:</label>
+          <div>
+			  
+		<br>
+			  
+            <input id="mail" placeholder="Ingresa tu email" required>
+          </div><br>
 
-        <br>
-
-        <div>
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <br>
-
-        <input type="submit" value="Enviar">
-    </form>
+          <label for="mensaje" class="user">TU MENSAJE:</label> <br> <br>
+          <textarea id="mensaje" placeholder="Quiero solicitar información" class="mensaje" required></textarea>
+<br><br>
+          <div>
+            <button>Enviar</button>
+          </div><br><br>
+        </form>
 </footer>
+	
 </body>
+</div>		
 </html>

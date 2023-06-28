@@ -6,14 +6,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+	font-family: Calibri, sans-serif;
 }
 
-img:hover {
-  box-shadow: 0 0 10px purple;
+img{
+	
+	padding: 25px;
 }
+
+
+
+/* Estructura */
 
 body {
-  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-HD-Gif-Wallpapers-For-Desktop.gif");
+  background-image: url("https://cutewallpaper.org/29/dreamy-animated-wallpaper-gif/hello-im-miena.gif");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,6 +41,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Estilo del CV */
 
 h1 {
   color: #c594aa;
@@ -124,6 +132,20 @@ a:hover {
   background-color: #c74c0c;
 }
 
+.social-link2 {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #d4a8a0;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.social-link2:hover {
+  background-color: #d08864;
+}
+
 .pill::after {
   content: attr(data-message);
   position: absolute;
@@ -157,6 +179,73 @@ a:hover {
   background-color: black;
 }
 
+.final-section2 {
+  background-color: #acb9c8;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+}
+
+
+/* Formulario */
+
+input{
+	
+	width: 384px;
+	height: 64px;
+	border-radius: 5px;
+	background-color: #151e33;
+	border: 1px solid #495e8d;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 14px;
+	
+}
+
+
+textarea{
+	
+    width: 384px;
+    height: 94px;
+    border-radius: 5px;
+    background-color: #151e33;
+    border: 1px solid #495e8d;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+	font-size: 14px;
+	
+}
+
+button{
+	
+	color: white;
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 5px 30px;
+	margin-left: 30%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 384px;
+	height: 67px;
+	background-color: #e3627f;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+button:hover {
+  color: #151E33;
+  
+}
+
+
+
 /* Estilo para pantallas chicas */
 @media screen and (max-width: 600px) {
   .mockup {
@@ -186,27 +275,6 @@ a:hover {
     width: 250px;
     font-size: 12px;
   }
-	
-	button {
-color: white;
-border-radius: 5px;
-border-color: transparent;
-padding: 5px 30px;
-margin-left: 30%;
-display: block;
-margin: 0 auto;
-margin-top: 10px;
-width: 384px;
-height: 67px;
-background-color: #e3627f;
-font-size: 18px;
-font-weight: bold;
-}
-
-button:hover {
-  color: #151E33;
-  
-}
 }
 
 /* Estilo para pantallas medianas */
